@@ -6,5 +6,7 @@ int main(int argc, char **argv)
 	{
 		ScalarConverter::convert(argv[1]);
 	}
+	else
+		std::cout << "Wrong input" << std::endl;
 	return (0);
 }

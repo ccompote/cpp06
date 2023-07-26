@@ -19,4 +19,9 @@ class ScalarConverter
 		public:
 
 			static void convert(char *str);
+			static int getType(char *str);
+			static void convertFromInt(char *str);
+			static void convertFromChar(char c);
+			static void convertFromFloat(char *str);
+			static void convertFromDouble(char *str);
 };
