@@ -35,22 +35,21 @@ Base * generate(void)
 			return new B();
 		case TYPE_C:
 			return new C();
-		default:
-			return nullptr;
 	}
+	std::cout << "Error" << std::endl;
+	return NULL;
 }
 
 void identify(Base* p)
 {
-	if (dynamic_cast<A*>(p)) {
+	if (dynamic_cast<A*>(p)) 
         std::cout << "A" << std::endl;
-    } else if (dynamic_cast<B*>(p)) {
+    else if (dynamic_cast<B*>(p))
         std::cout << "B" << std::endl;
-    } else if (dynamic_cast<C*>(p)) {
+    else if (dynamic_cast<C*>(p))
         std::cout << "C" << std::endl;
-    } else {
+    else 
         std::cout << "Unknown type" << std::endl;
-    }
 }
 
 void identify(Base& p)
